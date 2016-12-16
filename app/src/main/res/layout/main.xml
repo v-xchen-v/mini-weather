@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:background="#000000">
+        <ImageView
+            android:id="@+id/title_city_manager"
+            android:layout_height="45.0dp"
+            android:layout_width="45.0dp"
+            android:src="@drawable/title_city_manager">
+        </ImageView>
+        <TextView
+            android:layout_height="45.0dp"
+            android:layout_width="match_parent"
+
+            android:layout_toRightOf="@id/title_city_manager"
+            android:gravity="center_vertical"
+
+            android:text="天气预报"
+            android:textSize="25.0sp"
+            android:textColor="#FFFFFF">
+        </TextView>
+        <ImageView
+            android:id="@+id/title_city_locate"
+            android:layout_height="45.0dp"
+            android:layout_width="45.0dp"
+
+            android:layout_toLeftOf="@id/title_city_update"
+
+            android:src="@drawable/title_city_locate">
+        </ImageView>
+        <ImageView
+            android:id="@+id/title_city_update"
+            android:layout_height="45.0dp"
+            android:layout_width="45.0dp"
+
+            android:layout_toLeftOf="@id/title_city_share"
+
+            android:src="@drawable/title_city_update">
+        </ImageView>
+        <ImageView
+            android:id="@+id/title_city_share"
+            android:layout_height="45.0dp"
+            android:layout_width="45.0dp"
+
+            android:layout_alignParentRight="true"
+
+            android:src="@drawable/title_city_share">
+        </ImageView>
+    </RelativeLayout>
+</RelativeLayout>
