@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_1d4803a531bb67aac3bcac78ecfb9ad0ffc5e9e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_6180db5939a4c851a291142c03bf4ff0c7498829/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_c094c2306d46e2340ca913b3ced662f1a4e424e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_d45f8fa986f8cb126ad841ac4da44843b0470b28/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_2f9734624ffe353f8eeda910ac65f3df619c7da7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_a42da59f87a36a66048514fec9c32df5c02dd134/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_6e5f356ba93be8dc8d0833438f5a6eff5583061c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_53a037b89155411c0cacc478d479aa5f3c3047fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_0ba5fdc6cedae2c425b7be90ecdeb9f37c29d78d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a37d8782542de3ede3f799024bd70a0b716d4100">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b9b7458c85e97260d814c4e37c77afc8804a565c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bdb02d99b6a87286a76f8ab7dc0efb7837e2eede">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1ee73c5f518b2ebf8e4cf54b0c1d9601df1e1bff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_a2a975b48d29fdff404ec4fb7b84be012c5ee8fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_249eb1c958084b5cc52f791d9d326c104c88bfac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_b6d7bb794139b9823eea47c7d8acc7fcaadc1f8a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_ee4684256e47a2029276ca1bd6aa7426396358c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_ac97865c86dd066f287dbe57b9bea9e5cf6e7375/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_2d4d7addecff6de0045427fdc69767fa0f0bd741/classes.dex" />
+    </item>
+
+</items>
