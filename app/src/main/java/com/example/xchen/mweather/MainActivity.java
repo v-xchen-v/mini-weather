@@ -1,6 +1,7 @@
 package com.example.xchen.mweather;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -27,6 +28,7 @@ import java.net.URL;
 public class MainActivity extends Activity implements View.OnClickListener{
     //tile
     private ImageView UpdateBtn;
+    private ImageView SelectCityBtn;
 
     //todayweather
     private TextView cityT,timeT,humidityT,weekT,pmDataT,pmQualityT,temperatureT,
@@ -57,6 +59,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
         UpdateBtn = (ImageView)findViewById(R.id.title_city_update);;
         UpdateBtn.setOnClickListener(this);
 
+        SelectCityBtn = (ImageView)findViewById(R.id.title_city_manager);
+        SelectCityBtn.setOnClickListener(this);
+
         initView();
 
         //检查网络连接状态
@@ -77,6 +82,11 @@ public class MainActivity extends Activity implements View.OnClickListener{
         if(v.getId()==R.id.title_city_update)
         {
             getWeatherDatafromNet("101010100");
+        }
+        if(v.getId()==R.id.title_city_manager)
+        {
+            Intent intent = new Intent(this,SelectCity.class);
+            startActivity(intent);
         }
     }
 
