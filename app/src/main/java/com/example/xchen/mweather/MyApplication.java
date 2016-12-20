@@ -16,7 +16,7 @@ import java.util.List;
 
 public class MyApplication extends Application {
     private static Application mApp;
-    List<City> CityList;
+    List<City> cityList;
     CityDB mCityDB;
 
     @Override
@@ -71,8 +71,8 @@ public class MyApplication extends Application {
 
     private boolean prepareCityList()
     {
-        CityList = mCityDB.getCityList();
-        for(City city:CityList)
+        cityList = mCityDB.getCityList();
+        for(City city:cityList)
         {
             String cityName = city.getCity();
             Log.d("CityDB",cityName);
@@ -82,7 +82,7 @@ public class MyApplication extends Application {
 
     private void initCityList()
     {
-        CityList = new ArrayList<City>();
+        //CityList = new ArrayList<City>();
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -91,5 +91,9 @@ public class MyApplication extends Application {
         }).start();
     }
 
+    public List<City> getCityList()
+    {
+        return cityList;
+    }
 
 }

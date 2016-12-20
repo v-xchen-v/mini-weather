@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
     <RelativeLayout
+        android:id="@+id/selectcity_title"
         android:layout_width="fill_parent"
         android:layout_height="45.0dp"
         android:background="#000000">
@@ -26,5 +27,16 @@
             android:textSize="25.0sp"
             android:gravity="center">
         </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@id/selectcity_title">
+        <ListView
+            android:id="@+id/selectcity_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
     </RelativeLayout>
 </RelativeLayout>

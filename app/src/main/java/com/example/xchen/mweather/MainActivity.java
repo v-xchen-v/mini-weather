@@ -26,6 +26,8 @@ import java.net.URL;
  */
 
 public class MainActivity extends Activity implements View.OnClickListener{
+    private String updateCityCode;
+    TodayWeather todayWeather = null;
     //tile
     private ImageView UpdateBtn;
     private ImageView SelectCityBtn;
@@ -49,8 +51,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
             }
         }
     };
-
-    TodayWeather todayWeather = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +65,12 @@ public class MainActivity extends Activity implements View.OnClickListener{
         SelectCityBtn.setOnClickListener(this);
 
         initView();
+
+        updateCityCode = getIntent().getStringExtra("citycode");
+        if(updateCityCode!="-1")
+        {
+            getWeatherDatafromNet(updateCityCode);
+        }
 
         //检查网络连接状态
         if(CheckNet.getNetState(this)==CheckNet.NET_NONE)
