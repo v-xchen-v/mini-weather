@@ -54,6 +54,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Log.d("MainActivity","onCreate");
         setContentView(R.layout.main);
 
         UpdateBtn = (ImageView)findViewById(R.id.title_city_update);;
