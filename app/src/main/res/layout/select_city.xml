@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
+    <!--
     <RelativeLayout
         android:id="@+id/selectcity_title"
         android:layout_width="fill_parent"
@@ -28,11 +29,45 @@
             android:gravity="center">
         </TextView>
     </RelativeLayout>
+    -->
+    <RelativeLayout
+        android:id="@+id/selectcity_search_rela"
+        android:layout_height="45.0dp"
+        android:layout_width="fill_parent">
+        <RelativeLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_toLeftOf="@+id/selectcity_search_buttonrela">
+            <EditText
+                android:id="@+id/selectcity_search"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/search_city"
+                android:hint="   搜索全国城市(中文)"
+                android:paddingLeft="35.0dp"
+                android:singleLine="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+            </EditText>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/selectcity_search_buttonrela"
+            android:layout_width="80.0dp"
+            android:layout_height="45.0dp"
+
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@+id/selectcity_search_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/search_button" />
+        </RelativeLayout>
+    </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-        android:layout_below="@id/selectcity_title">
+        android:layout_below="@id/selectcity_search_rela">
         <ListView
             android:id="@+id/selectcity_lv"
             android:layout_width="match_parent"
