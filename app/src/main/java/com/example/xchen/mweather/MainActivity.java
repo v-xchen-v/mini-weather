@@ -2,6 +2,7 @@ package com.example.xchen.mweather;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
@@ -27,7 +28,7 @@ import java.net.URL;
  */
 
 public class MainActivity extends Activity implements View.OnClickListener{
-    private String updateCityCode;
+    private String updateCityCode = "-1";
     TodayWeather todayWeather = null;
     //tile
     private ImageView UpdateBtn;
@@ -90,7 +91,15 @@ public class MainActivity extends Activity implements View.OnClickListener{
     public void onClick(View v) {
         if(v.getId()==R.id.title_city_update)
         {
-            getWeatherDatafromNet("101010100");
+            SharedPreferences mySharePre = getSharedPreferences("CityCodePreference",Activity.MODE_PRIVATE);
+            String sharecode = mySharePre.getString("citycode","");
+            if(!sharecode.equals(""))
+            {
+                Log.d("sharecode",sharecode);
+                getWeatherDatafromNet(sharecode);
+            }else {
+                getWeatherDatafromNet("101010100");
+            }
         }
         if(v.getId()==R.id.title_city_manager)
         {
