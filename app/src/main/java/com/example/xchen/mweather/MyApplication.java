@@ -75,7 +75,7 @@ public class MyApplication extends Application {
         for(City city:cityList)
         {
             String cityName = city.getCity();
-            Log.d("CityDB",cityName);
+//            Log.d("CityDB",cityName);
         }
         return true;
     }
