@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="cc7dba0a480972fb27b33e00da445c64c5efc534">
+        sha1="b984c87a5e73ad0449bd9e85622f87014765b607">
         <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b9b7458c85e97260d814c4e37c77afc8804a565c/classes.dex" />
     </item>
     <item
@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="cf08fcd068bfe85820578364eae0b0b8eab5baef">
+        sha1="9e24bcc8c902c21d7f136bc46381bf5250a35855">
         <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1ee73c5f518b2ebf8e4cf54b0c1d9601df1e1bff/classes.dex" />
     </item>
     <item
