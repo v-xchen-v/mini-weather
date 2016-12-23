@@ -33,6 +33,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     //tile
     private ImageView UpdateBtn;
     private ImageView SelectCityBtn;
+    private ImageView LocateBtn;
 
     //todayweather
     private TextView cityT,timeT,humidityT,weekT,pmDataT,pmQualityT,temperatureT,
@@ -63,11 +64,16 @@ public class MainActivity extends Activity implements View.OnClickListener{
         Log.d("MainActivity","onCreate");
         setContentView(R.layout.main);
 
+
+
         UpdateBtn = (ImageView)findViewById(R.id.title_city_update);;
         UpdateBtn.setOnClickListener(this);
 
         SelectCityBtn = (ImageView)findViewById(R.id.title_city_manager);
         SelectCityBtn.setOnClickListener(this);
+
+        LocateBtn = (ImageView)findViewById(R.id.title_city_locate);
+        LocateBtn.setOnClickListener(this);
 
         initView();
 
@@ -107,6 +113,14 @@ public class MainActivity extends Activity implements View.OnClickListener{
         if(v.getId()==R.id.title_city_manager)
         {
             Intent intent = new Intent(this,SelectCity.class);
+            startActivity(intent);
+        }
+
+        if(v.getId()== R.id.title_city_locate){
+//            Locate mLocation = new Locate(this);
+//            mLocation.startLocation();
+            Log.d("click","title_city_locate");
+            Intent intent = new Intent(this,Locate.class);
             startActivity(intent);
         }
     }

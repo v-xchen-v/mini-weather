@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="7bb0544db1b7aec8bd9cec2e1464a1875ebeaa19">
+        sha1="706092cae6f020d182f79460a6994729c2baa48b">
         <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b9b7458c85e97260d814c4e37c77afc8804a565c/classes.dex" />
     </item>
     <item
@@ -115,8 +115,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="34ff0e52a79a4dd086169b41cfaed71ca3cda86f">
+        sha1="36b320cd6969de703fe344cf18c210aa835a83c3">
         <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1ee73c5f518b2ebf8e4cf54b0c1d9601df1e1bff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xchen/Documents/workspaceAS/MWeather/app/libs/BaiduLBS_Android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7527380ff6c24ed799d3db6ec8efb5e576889e92">
+        <dex dex="/Users/xchen/Documents/workspaceAS/MWeather/app/build/intermediates/transforms/dex/debug/folders/1000/2/BaiduLBS_Android_24a16bd7fd58a6d5f8d7a6bb8e8d33136ff65c6c/classes.dex" />
     </item>
     <item
         is-multidex="true"
