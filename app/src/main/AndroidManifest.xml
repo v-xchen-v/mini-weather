@@ -40,6 +40,8 @@
         </activity>
         <activity android:name=".SelectCity">
         </activity>
-        <activity android:name=".Locate"></activity>
+        <activity android:name=".Locate"
+            android:exported="true">
+        </activity>
     </application>
 </manifest>

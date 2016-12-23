@@ -31,6 +31,9 @@ public class SelectCity extends Activity implements View.OnClickListener{
     ArrayAdapter<String> adapter;
 
     private String updateCityCode = "-1";
+    private String selectNo;
+
+    boolean searched = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +67,12 @@ public class SelectCity extends Activity implements View.OnClickListener{
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                updateCityCode = mCityList.get(position).getNumber();
+                if(searched)
+                {
+                    updateCityCode = mCityList.get(Integer.parseInt(selectNo)).getNumber();
+                }else {
+                    updateCityCode = mCityList.get(position).getNumber();
+                }
                 Log.d("update city code",updateCityCode);
 
                 //用Shareperference 存储最近一次的citycode
@@ -86,21 +94,24 @@ public class SelectCity extends Activity implements View.OnClickListener{
         switch (v.getId())
         {
             case R.id.selectcity_search_button:
-                String citycode = searchEt.getText().toString();
-                Log.d("Search",citycode);
-                ArrayList<String> mSearchList = new ArrayList<String>();
+                String cityKey = searchEt.getText().toString();
+                Log.d("Search",cityKey);
+                //ArrayList<String> mSearchList = new ArrayList<String>();
                 for(int i=0;i<mCityList.size();i++)
                 {
                     String No_ = Integer.toString(i+1);
                     String number= mCityList.get(i).getNumber();
                     String provinceName = mCityList.get(i).getProvince();
                     String cityName = mCityList.get(i).getCity();
-                    if(number.equals(citycode)) {
-                        mSearchList.add("NO." + No_ + ":" + number + "-" + provinceName + "-" + cityName);
+                    if(number.equals(cityKey)||cityName.equals(cityKey)) {
+                        searched = true;
+                        selectNo = Integer.toString(i);
+                        mArrayList.clear();
+                        mArrayList.add("NO." + No_ + ":" + number + "-" + provinceName + "-" + cityName);
                         Log.d("changed adapter data","NO." + No_ + ":" + number + "-" + provinceName + "-" + cityName);
                     }
 
-                    adapter = new ArrayAdapter<String>(SelectCity.this,android.R.layout.simple_list_item_1,mSearchList);
+                    adapter = new ArrayAdapter<String>(SelectCity.this,android.R.layout.simple_list_item_1,mArrayList);
                     cityListLv.setAdapter(adapter);
                     adapter.notifyDataSetChanged();
                 }
