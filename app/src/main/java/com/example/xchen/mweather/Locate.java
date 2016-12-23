@@ -1,15 +1,14 @@
 package com.example.xchen.mweather;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
-import com.baidu.location.BDLocation;
-import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 
@@ -25,6 +24,9 @@ public class Locate extends Activity{
 
     Button locateBtn;
 
+    private String mLocCityCode;
+    private List<City> mCityList;
+    private MyApplication mApplication;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +38,32 @@ public class Locate extends Activity{
         mLocationClient.registerLocationListener(myLocationListener);
         initLocation();
         mLocationClient.start();
+
+
+        final Intent intent = new Intent(this,MainActivity.class);
+        locateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mApplication = (MyApplication)getApplication();
+                mCityList = mApplication.getCityList();
+                for(City city:mCityList)
+                {
+                    String locateCityName = locateBtn.getText().toString();
+                    if(city.getCity().equals(locateCityName.substring(0,locateCityName.length()-1))) {
+                        mLocCityCode = city.getNumber();
+                        Log.d("locate", locateCityName.substring(0,locateCityName.length()-1));
+                    }
+                }
+                //用Shareperference 存储最近一次的citycode
+                SharedPreferences sharedPreferences = getSharedPreferences("CityCodePreference",Activity.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("citycode",mLocCityCode);
+                editor.commit();
+
+                intent.putExtra("citycode",mLocCityCode);
+                startActivity(intent);
+            }
+        });
     }
     void initLocation()
     {
