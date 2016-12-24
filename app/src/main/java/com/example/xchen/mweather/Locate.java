@@ -40,7 +40,8 @@ public class Locate extends Activity{
         mLocationClient.start();
 
 
-        final Intent intent = new Intent(this,MainActivity.class);
+        final Intent intent = new Intent(this,MainActivity.class).setFlags(
+                Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         locateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +63,7 @@ public class Locate extends Activity{
 
                 intent.putExtra("citycode",mLocCityCode);
                 startActivity(intent);
+                mLocationClient.stop();
             }
         });
     }

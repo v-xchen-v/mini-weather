@@ -81,6 +81,16 @@ public class MainActivity extends Activity implements View.OnClickListener{
         if(updateCityCode!="-1"&& updateCityCode != null)
         {
             getWeatherDatafromNet(updateCityCode);
+        }else
+        {
+            SharedPreferences sharedPreferences = getSharedPreferences(
+                    "CityCodePreference",Activity.MODE_PRIVATE);
+            String defaultCityCode = sharedPreferences.getString("citycode","");
+            if(defaultCityCode!=null){
+                Log.d("defaultCityCode",defaultCityCode);
+                getWeatherDatafromNet(defaultCityCode);
+            }
+
         }
 
         //检查网络连接状态

@@ -62,7 +62,8 @@ public class SelectCity extends Activity implements View.OnClickListener{
         adapter.notifyDataSetChanged();
         cityListLv.setAdapter(adapter);
 
-        final Intent intent = new Intent(this,MainActivity.class);
+        final Intent intent = new Intent(this,MainActivity.class).setFlags(
+                Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         //添加ListView项的点击事件的动作
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
